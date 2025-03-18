@@ -180,10 +180,10 @@ header {
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s;
-    box-shadow: var(--glow-shadow);
 }
 .game-card:hover {
     transform: translateY(-10px);
+    box-shadow: var(--glow-shadow);
 }
 .game-card img {
     width: 100%;
