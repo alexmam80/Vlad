@@ -133,6 +133,9 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
 }
+.features-grid a {
+    text-decoration: none;
+}
 .feature-card {
     background: rgba(255,255,255,0.1);
     padding: 4rem;
@@ -158,6 +161,47 @@ header {
 .feature-card p {
     font-size: 1rem;
     color: var(--light-text);
+}
+
+/*Pop Menu Section */
+
+
+.popup-menu {
+    position: absolute;
+    /*top: -60px;*/
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);*/
+    z-index: 100;
+    bottom: -80px;
+    box-shadow: var(--glow-shadow);
+}
+
+.popup-menu.active {
+    display: flex;
+}
+
+.popup-button {
+    padding: 0.8rem 2rem;
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.popup-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue);
 }
 /*Games Section */
 .games {
@@ -218,6 +262,12 @@ footer {
 .footer-col h3 {
     color: var(--neon-blue);
     margin-bottom: 1.5rem;
+}
+.col3 {
+    text-align: left;
+}
+.fa-solid:before {
+    margin-right: 15px;
 }
 .footer-col ul {
     list-style: none;
