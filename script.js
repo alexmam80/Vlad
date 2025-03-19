@@ -27,5 +27,24 @@ scrollElements.forEach  (el => {
 });
 
 
+// Butoane ascunse
+const communityCard = document.getElementById('communityCard');
+const popupMenu = document.getElementById('popupMenu');
+        
+        // Funcție pentru a afișa meniul la atingere/click
+        communityCard.addEventListener('click', function(e) {
+            popupMenu.classList.toggle('active');
+            e.stopPropagation();
+        });
+        
+        // Ascunde meniul când se face click în altă parte pe pagină
+        document.addEventListener('click', function(e) {
+            if (!communityCard.contains(e.target)) {
+                popupMenu.classList.remove('active');
+            }
+        });
+
+
+
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
