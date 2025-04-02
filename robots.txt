@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexmam80.github.io/Vlad/sitemap.xml
