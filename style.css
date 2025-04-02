@@ -44,6 +44,11 @@ header {
     text-shadow: var(--glow-shadow);
     text-decoration: none!important;
 }
+.logo a:hover {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+    text-decoration: none!important;
+}
 .nav-links {
     display: flex;
     gap: 2rem;
