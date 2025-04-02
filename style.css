@@ -39,6 +39,10 @@ header {
     color: var(--neon-blue);
     text-shadow: var(--glow-shadow);
 }
+.logo a {
+    color: var(--neon-blue);
+    text-shadow: var(--glow-shadow);
+}
 .nav-links {
     display: flex;
     gap: 2rem;
