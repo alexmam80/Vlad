@@ -42,6 +42,7 @@ header {
 .logo a {
     color: var(--neon-blue);
     text-shadow: var(--glow-shadow);
+    text-decoration: none!important;
 }
 .nav-links {
     display: flex;
